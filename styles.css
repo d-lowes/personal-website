@@ -65,7 +65,7 @@
 }
 
 .resume_container {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-self:center;
     column-count: 2;
@@ -74,7 +74,13 @@
     z-index: 1;
     width: 100%;
     max-width: 1300px;
+}
 
+img.resize {
+    width: 250px;
+    height: auto;
+    border: 2px solid #b1b1b1;
+    border-radius: 6px
 }
 
 .row {
@@ -86,13 +92,13 @@
 }
 
 #right-side {
-    text-align: right;
+    text-align: left;
 }
 
 .main_content h1 {
     font-size: 2rem;
     font-weight: 100;
-    padding-left: 100px;
+    padding: 0 100px 10px 100px;
 }
 
 .main_content h2 {
@@ -116,12 +122,19 @@
 
 .main_content h5 {
     font-size: .6rem;
-    font-weight: 100;
-    padding: 1px 100px;
+    font-weight: 400;
+    padding: 1px 100px 10px ;
 }
 
 .main_content li {
     font-size: .6rem;
+    font-weight: 100;
+    padding: 4px 100px 4px;
+    list-style-type: none;
+}
+
+.main_content ul {
+    font-size: 1rem;
     font-weight: 100;
     padding: 1px 100px;
 }
